@@ -22,13 +22,13 @@ public class MyMap {
 		System.out.println("map.get(1) = "+map.get(1));
 		System.out.println("map.replace(2, \"Akbar\", \"Ahmed\") "+map.replace(2, "Akbar", "Ahmed"));
 		System.out.println("************************************************");
-		
+		//retrieve the value using Map.Entry<Integer,String> entry : map.entrySet()   
 		for(Map.Entry<Integer,String> entry : map.entrySet()) {
 			
 			System.out.println(entry.getKey()+"    "+entry.getValue());
 		}
 		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-		
+		//retrieve the value using map.keySet() 
 		for (Integer i : map.keySet()) {
 		      System.out.println("key: " + i + " value: " + map.get(i));
 		    }
